@@ -1,0 +1,13 @@
+{
+	  "memory": "2G",
+	  "instances": 1,
+	  "environment":{
+		"ZOOKEEPER":"<zookeeper_host>:<port>"
+	  },
+	  "services":[
+	  {
+	  "name":"<name of your Kafka instance>",
+	  "type":"OEHPCS"
+	  }
+	 ]
+}

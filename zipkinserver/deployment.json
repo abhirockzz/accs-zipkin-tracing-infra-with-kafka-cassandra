@@ -1,0 +1,20 @@
+{
+  "memory": "4G",
+  "instances": 1,
+  "environment": {
+    "ZOOKEEPER": "<zookeeper_host>:<port>",
+    "ZIPKIN_KEYSPACE": "<name of keyspace>"
+  },
+  "services": [
+    {
+      "name": "<name of the Kafka instance>",
+      "type": "OEHPCS"
+    },
+    {
+      "name": "<name of the Cassandra instance>",
+      "type": "DHCS",
+      "username": "<cassandra admin>",
+      "password": "<cassandra password>"
+    }
+  ]
+}
